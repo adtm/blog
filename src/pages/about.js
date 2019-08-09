@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 import Header from '../components/Header'
-import Layout from "../components/layout"
+// import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const Title = styled.h3`
@@ -16,7 +16,7 @@ const Text = styled.p`
   line-spacing: 25;
 `
 
-const Container = styled.div`
+const Cont = styled.div`
   position: absolute;
   top: 150px;
   right: 0;
@@ -30,12 +30,12 @@ const Container = styled.div`
 
 const About = () => (
   <>
-    <Header />
+    <Header id="cow"/>
     <SEO title="About" />
-    <Container>
+    <Cont id="fuck">
       <Title>About</Title>
       <Text>
-        <p>👋 Hey, I'm Tomas </p>
+        <p>  Hey, I'm Tomass </p>
         <p>
           I'm a software engineer @ Wix, who's searching the world trying to
           understand myself and others.
@@ -55,7 +55,7 @@ const About = () => (
           reachable at <a href="https://www.linkedin.com/in/tomas-eglinskas">@LinkedIn</a> and  <a href="mailto:tomas.eglinskas@gmail.com">@Mail</a>
         </p>
       </Text>
-    </Container>
+    </Cont>
   </>
 )
 

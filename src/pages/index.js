@@ -33,7 +33,7 @@ const About = () => (
     <Container>
       <Title>About</Title>
       <Text>
-        <p>👋 Hey, I'm Tomas </p>
+        <p> Hey, I'm Tomas </p>
         <p>
           I'm a software engineer @ Wix, who's searching the world trying to
           understand myself and others.
