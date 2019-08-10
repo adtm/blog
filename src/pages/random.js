@@ -2,7 +2,7 @@ import React from "react"
 import styled from 'styled-components'
 
 import Layout from "../components/layout"
-import Post from '../components/Post'
+
 import SEO from "../components/seo"
 import Label from "../components/Label";
 
@@ -23,14 +23,14 @@ const PostContainer = styled.div`
   text-align:center;
 `
 
-const Text = styled.span`
-  max-width: 960px;
-  font-family: "SF Compact Display";
-  font-size: 18px;
-  font-weight: 600;
-  margin: 10px 0px;
+// const Text = styled.span`
+//   max-width: 960px;
+//   font-family: "SF Compact Display";
+//   font-size: 18px;
+//   font-weight: 600;
+//   margin: 10px 0px;
 
-`
+// `
 
 const IndexPage = () => (
   <Layout>
@@ -42,7 +42,7 @@ const IndexPage = () => (
     </LabelContainer>
     <PostContainer>
       {/* <Post /> */}
-      <Text>🚧 In the works 🚧</Text>
+      {/* <Text>🚧 In the works 🚧</Text> */}
     </PostContainer>
   </Layout>
 )

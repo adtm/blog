@@ -1,9 +1,9 @@
 import React from "react"
-import { Link } from 'gatsby'
-import styled from 'styled-components'
+import { Link } from "gatsby"
+import styled from "styled-components"
 
 const StyledHeader = styled.header`
-  display: flex;  
+  display: flex;
   justify-content: center;
   align-items: center;
 `
@@ -14,7 +14,7 @@ const Category = styled(Link)`
   font-weight: 600;
   text-decoration: none;
   margin: 40px 20px 0 20px;
-  color: #000; 
+  color: #000;
 `
 
 const Name = styled.p`
@@ -26,20 +26,26 @@ const Name = styled.p`
   color: #000;
   left: 20px;
 
-  @media screen and (max-width: 640px){
-
+  @media screen and (max-width: 640px) {
     & {
       position: absolute;
       visibility: hidden;
     }
-
   }
 `
 
 const Header = () => (
   <StyledHeader>
     <Name>Tomas Eglinskas</Name>
-    <Category>🚧 Blog 🚧</Category>
+    <Category>
+      <span role="img" aria-label="stop-sign">
+        🚧
+      </span>{" "}
+      Blog{" "}
+      <span role="img" aria-label="stop-sign">
+        🚧
+      </span>{" "}
+    </Category>
     <Category to="/about">About</Category>
   </StyledHeader>
 )

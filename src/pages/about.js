@@ -15,14 +15,11 @@ const Text = styled.p`
   line-spacing: 25;
 `
 
-const Container = styled.div`
-  position: absolute;
-  top: 150px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 20px;
+const Container = styled.div`  
   margin: auto;
+  padding: 20px;
+  margin-top: 100px;
+  margin-bottom: 50px;
   max-width: 460px;
   font-family: "SF Compact Display";
 `
@@ -33,7 +30,7 @@ const About = () => (
     <Container>
       <Title>About</Title>
       <Text>
-        <p>👋 Hey, I'm Tomas </p>
+        <p><span role="img" aria-label="wave">👋</span> Hey, I'm Tomas </p>
         <p>
           I'm a software engineer @ Wix, who's searching the world trying to
           understand myself and others.
