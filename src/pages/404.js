@@ -20,6 +20,7 @@ const NotFoundPage = () => (
     <SEO title="404: Not found" />
     <Container>
     <iframe
+    title="404"
       src="https://giphy.com/embed/4sRgvD40CDTeo"
       width="480"
       height="270"
