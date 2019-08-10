@@ -15,7 +15,7 @@ const Text = styled.p`
   line-spacing: 25;
 `
 
-const Container = styled.div`  
+const Container = styled.div`
   margin: auto;
   padding: 20px;
   margin-top: 100px;
@@ -36,7 +36,12 @@ const About = () => (
     <Container>
       <Title>About</Title>
       <Text>
-        <p><span role="img" aria-label="wave">👋</span> Hey, I'm Tomas </p>
+        <p>
+          <span role="img" aria-label="wave">
+            👋
+          </span>{" "}
+          Hey, I'm Tomas{" "}
+        </p>
         <p>
           A software engineer @ Wix, who's searching the world trying to
           understand myself and others.
@@ -53,7 +58,9 @@ const About = () => (
         </p>
         <p>
           Therefore don't be afraid to say hi or ask questions. I'm also freely
-          reachable at <a href="https://www.linkedin.com/in/tomas-eglinskas">@LinkedIn</a> and  <a href="mailto:tomas.eglinskas@gmail.com">@Mail</a>
+          reachable at{" "}
+          <a href="https://www.linkedin.com/in/tomas-eglinskas">@LinkedIn</a>{" "}
+          and <a href="mailto:tomas.eglinskas@gmail.com">@Mail</a>
         </p>
       </Text>
     </Container>

@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Blog',
-    description: `The simple place where I blog about the things I like.`,
+    title: "Blog",
+    description:
+      "A simple place where I try to share my knowledge and stories about various topics which intrigue me.",
     author: `Tomas Eglinskas`,
   },
   plugins: [
@@ -25,17 +26,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/about`,
-        background_color: `#663399`,
+        name: `Tomas Eglinskas`,
+        short_name: `Blog`,
+        start_url: `/`,
+        background_color: `#fff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/circle-256.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }

@@ -624,6 +624,7 @@ pre tt:after {
 
 @font-face {
   font-family: 'SF Compact Display';
+  font-display: auto;
   src:  url("../fonts/SF-Compact-Display-Regular.otf") format("opentype"),
         url("../fonts/SF-Compact-Display-Regular.woff") format("woff"), 
         url("../fonts/SF-Compact-Display-Regular.ttf") format("truetype"); 
@@ -637,6 +638,7 @@ pre tt:after {
 
 @font-face {
   font-family: 'SF Compact Display';
+  font-display: auto;
   src: url("../fonts/SF-Compact-Display-Semibold.otf") format("opentype"),
         url("../fonts/SF-Compact-Display-Semibold.woff") format("woff"), 
         url("../fonts/SF-Compact-Display-Semibold.ttf") format("truetype"); 
