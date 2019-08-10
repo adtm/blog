@@ -14,7 +14,7 @@ const Category = styled(Link)`
   font-weight: 600;
   text-decoration: none;
   margin: 40px 20px 0 20px;
-  color: #000;
+  color: #000; 
 `
 
 const Name = styled.p`
@@ -39,7 +39,7 @@ const Name = styled.p`
 const Header = () => (
   <StyledHeader>
     <Name>Tomas Eglinskas</Name>
-    <Category to="/about">🚧 Blog 🚧</Category>
+    <Category>🚧 Blog 🚧</Category>
     <Category to="/about">About</Category>
   </StyledHeader>
 )

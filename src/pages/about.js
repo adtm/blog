@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 
-import Header from '../components/Header'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -29,8 +28,7 @@ const Container = styled.div`
 `
 
 const About = () => (
-  <>
-    <Header />
+  <Layout>
     <SEO title="About" />
     <Container>
       <Title>About</Title>
@@ -56,7 +54,7 @@ const About = () => (
         </p>
       </Text>
     </Container>
-  </>
+  </Layout>
 )
 
 export default About
