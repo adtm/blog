@@ -11,7 +11,7 @@ const StyledHeader = styled.header`
 const Category = styled(Link)`
   font-family: "SF Compact Display";
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
   margin: 40px 20px 0 20px;
   color: #000;
@@ -21,7 +21,7 @@ const Name = styled.p`
   position: absolute;
   font-family: "SF Compact Display";
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   margin: 40px 20px 0 20px;
   color: #000;
   left: 20px;

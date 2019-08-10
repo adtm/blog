@@ -629,22 +629,22 @@ pre tt:after {
         url("../fonts/SF-Compact-Display-Regular.ttf") format("truetype"); 
 }
 
-@font-face {
+/* @font-face {
   font-family: 'SF Compact Display';
   src: url("../fonts/SF-Compact-Display-Medium.otf") format("opentype");
-  font-weight: 300;
-}
+  font-weight: 200;
+} */
 
 @font-face {
   font-family: 'SF Compact Display';
   src: url("../fonts/SF-Compact-Display-Semibold.otf") format("opentype"),
         url("../fonts/SF-Compact-Display-Semibold.woff") format("woff"), 
         url("../fonts/SF-Compact-Display-Semibold.ttf") format("truetype"); 
-  font-weight: 400;
+  font-weight: 500;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'SF Compact Display';
   src: url("../fonts/SF-Compact-Display-Bold.otf") format("opentype");
-  font-weight: 600;
-} 
+  font-weight: 400;
+}  */
