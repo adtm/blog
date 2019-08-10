@@ -1,5 +1,5 @@
 import React from "react"
-import styled from 'styled-components'
+import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -19,21 +19,17 @@ const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />
     <Container>
-    <iframe
-    title="404"
-      src="https://giphy.com/embed/4sRgvD40CDTeo"
-      width="480"
-      height="270"
-      frameBorder="0"
-      class="giphy-embed"
-      allowFullScreen
-    ></iframe>
-    <p>
-      404
-    </p>
+      <iframe
+        title="404"
+        src="https://giphy.com/embed/4sRgvD40CDTeo"
+        width="480"
+        height="270"
+        frameBorder="0"
+        class="giphy-embed"
+        allowFullScreen
+      ></iframe>
+      <p>404</p>
     </Container>
-    
-
   </Layout>
 )
 
