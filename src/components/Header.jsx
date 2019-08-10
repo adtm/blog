@@ -39,7 +39,7 @@ const Name = styled.p`
 const Header = () => (
   <StyledHeader>
     <Name>Tomas Eglinskas</Name>
-    <Category to="/about">🚧 Blog 🚧</Category>
+    <Category>🚧 Blog 🚧</Category>
     <Category to="/about">About</Category>
   </StyledHeader>
 )
