@@ -38,7 +38,7 @@ const About = () => (
       <Text>
         <p><span role="img" aria-label="wave">👋</span> Hey, I'm Tomas </p>
         <p>
-          I'm a software engineer @ Wix, who's searching the world trying to
+          A software engineer @ Wix, who's searching the world trying to
           understand myself and others.
         </p>
         <p>
