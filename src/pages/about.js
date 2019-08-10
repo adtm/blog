@@ -22,6 +22,12 @@ const Container = styled.div`
   margin-bottom: 20px;
   max-width: 460px;
   font-family: "SF Compact Display";
+
+  @media screen and (max-width: 480px) {
+    & {
+      margin-top: 50px;
+    }
+  }
 `
 
 const About = () => (
