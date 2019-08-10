@@ -19,7 +19,7 @@ const Container = styled.div`
   margin: auto;
   padding: 20px;
   margin-top: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   max-width: 460px;
   font-family: "SF Compact Display";
 `

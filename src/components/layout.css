@@ -623,20 +623,20 @@ pre tt:after {
 }
 
 @font-face {
-  font-family: 'SF-Compact-Display';
+  font-family: 'SF Compact Display';
   src:  url("../fonts/SF-Compact-Display-Regular.otf") format("opentype"),
         url("../fonts/SF-Compact-Display-Regular.woff") format("woff"), 
         url("../fonts/SF-Compact-Display-Regular.ttf") format("truetype"); 
 }
 
 @font-face {
-  font-family: 'SF-Compact-Display';
+  font-family: 'SF Compact Display';
   src: url("../fonts/SF-Compact-Display-Medium.otf") format("opentype");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: 'SF-Compact-Display';
+  font-family: 'SF Compact Display';
   src: url("../fonts/SF-Compact-Display-Semibold.otf") format("opentype"),
         url("../fonts/SF-Compact-Display-Semibold.woff") format("woff"), 
         url("../fonts/SF-Compact-Display-Semibold.ttf") format("truetype"); 
@@ -644,7 +644,7 @@ pre tt:after {
 }
 
 @font-face {
-  font-family: 'SF-Compact-Display';
+  font-family: 'SF Compact Display';
   src: url("../fonts/SF-Compact-Display-Bold.otf") format("opentype");
   font-weight: 600;
 } 
