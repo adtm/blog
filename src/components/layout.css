@@ -632,7 +632,7 @@ pre tt:after {
 @font-face {
   font-family: 'SF Compact Display';
   src: url("../fonts/SF-Compact-Display-Medium.otf") format("opentype");
-  font-weight: 400;
+  font-weight: 300;
 }
 
 @font-face {
@@ -640,7 +640,7 @@ pre tt:after {
   src: url("../fonts/SF-Compact-Display-Semibold.otf") format("opentype"),
         url("../fonts/SF-Compact-Display-Semibold.woff") format("woff"), 
         url("../fonts/SF-Compact-Display-Semibold.ttf") format("truetype"); 
-  font-weight: 500;
+  font-weight: 400;
 }
 
 @font-face {
