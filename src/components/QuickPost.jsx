@@ -1,12 +1,12 @@
 import React from "react"
+import { Link } from "gatsby"
 import styled from "styled-components"
 
 import Label from "./Label"
-import { Link } from "gatsby"
 
 const Container = styled.div`
   margin: auto;
-  max-width: 460px;
+  max-width: ${({ maxWidth }) => maxWidth || "460"}px;
 `
 
 const PostContainer = styled(Link)`
@@ -32,17 +32,16 @@ const Text = styled.p`
   line-spacing: 25;
 `
 
-const Post = () => (
-  <Container>
-    <Label name="AI" />
-    <PostContainer to="/post">
-      <Title>My Journey of Learning AI</Title>
-      <Date>2019, August 25</Date>
+const Post = ({ title, date, html, tags, path, maxWidth }) => (
+  <Container maxWidth={maxWidth}>
+    {tags.map(tag => (
+      <Label name={tag} />
+    ))}
+    <PostContainer to={path}>
+      <Title>{title}</Title>
+      <Date>{date}</Date>
       <Text>
-        I decided to start my AI journey and blog my path through, explaining
-        how I understand and of course fail to understand things. This more of a
-        memory for my future self looking back and for someone if they need that
-        explain like I’m five explanation
+        <div dangerouslySetInnerHTML={{ __html: html }} />
       </Text>
     </PostContainer>
   </Container>

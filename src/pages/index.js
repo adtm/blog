@@ -1,19 +1,9 @@
 import React from "react"
 import styled from "styled-components"
+import { graphql } from "gatsby"
 
+import Post from "../components/QuickPost"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
-
-const Title = styled.h3`
-  font-size: 36px;
-  font-weight: 600;
-  margin: 20px 0px;
-`
-
-const Text = styled.p`
-  font-size: 16px;
-  line-spacing: 25;
-`
 
 const Container = styled.div`
   margin: auto;
@@ -30,41 +20,33 @@ const Container = styled.div`
   }
 `
 
-const About = () => (
+const HomePage = ({ data: { allMarkdownRemark } }) => (
   <Layout>
-    <SEO title="About" />
     <Container>
-      <Title>About</Title>
-      <Text>
-        <p>
-          <span role="img" aria-label="wave">
-            👋
-          </span>{" "}
-          Hey, I'm Tomas{" "}
-        </p>
-        <p>
-          A software engineer @ Wix, who's searching the world trying to
-          understand myself and others.
-        </p>
-        <p>
-          At the moment I'm being proactive in the startup field, participating
-          at incubators, hackatons and creating projects for myself. Similary
-          the idea of this blog came along - wanting to create something for
-          myself to remember, and maybe others to scroll by.
-        </p>
-        <p>
-          My main virtue is people, not technology, as I trully believe that
-          people are everything.
-        </p>
-        <p>
-          Therefore don't be afraid to say hi or ask questions. I'm also freely
-          reachable at{" "}
-          <a href="https://www.linkedin.com/in/tomas-eglinskas">@LinkedIn</a>{" "}
-          and <a href="mailto:tomas.eglinskas@gmail.com">@Mail</a>
-        </p>
-      </Text>
+      {allMarkdownRemark.edges.map(({ node }) => (
+        <Post {...node.frontmatter} html={node.html} />
+      ))}
     </Container>
   </Layout>
 )
 
-export default About
+export const query = graphql`
+  query HomePageQuery {
+    allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
+      edges {
+        node {
+          id
+          html
+          frontmatter {
+            title
+            date(formatString: "MMMM DD, YYYY")
+            path
+            tags
+          }
+        }
+      }
+    }
+  }
+`
+
+export default HomePage

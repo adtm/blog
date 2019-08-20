@@ -1,12 +1,20 @@
 module.exports = {
   siteMetadata: {
-    title: "Blog",
+    title: "Tomas Eglinskas Blog",
     description:
       "A simple place where I try to share my knowledge and stories about various topics which intrigue me.",
     author: `Tomas Eglinskas`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    "gatsby-transformer-remark",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/posts/`,
+      },
+    },
     `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,

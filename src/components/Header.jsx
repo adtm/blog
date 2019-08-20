@@ -22,7 +22,7 @@ const Name = styled.p`
   font-family: "SF Compact Display";
   font-size: 18px;
   font-weight: 500;
-  margin: 20px 20px 0 20px;
+  margin: 40px 20px 0 20px;
   color: #000;
   left: 20px;
 
@@ -37,16 +37,8 @@ const Name = styled.p`
 const Header = () => (
   <StyledHeader>
     <Name>Tomas Eglinskas</Name>
-    <Category>
-      <span role="img" aria-label="stop-sign">
-        🚧
-      </span>{" "}
-      Blog{" "}
-      <span role="img" aria-label="stop-sign">
-        🚧
-      </span>{" "}
-    </Category>
-    <Category to="/">About</Category>
+    <Category to="/">Blog</Category>
+    <Category to="/about">About</Category>
   </StyledHeader>
 )
 
