@@ -1,8 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/layout/layout"
+import SEO from "../components/seo/seo"
 
 const Title = styled.h3`
   font-size: 36px;

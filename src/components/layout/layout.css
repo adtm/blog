@@ -625,9 +625,9 @@ pre tt:after {
 @font-face {
   font-family: 'SF Compact Display';
   font-display: swap;
-  src:  url("../fonts/SF-Compact-Display-Regular.otf") format("opentype"),
-        url("../fonts/SF-Compact-Display-Regular.woff") format("woff"), 
-        url("../fonts/SF-Compact-Display-Regular.ttf") format("truetype"); 
+  src:  url("../../fonts/SF-Compact-Display-Regular.otf") format("opentype"),
+        url("../../fonts/SF-Compact-Display-Regular.woff") format("woff"), 
+        url("../../fonts/SF-Compact-Display-Regular.ttf") format("truetype"); 
 }
 
 /* @font-face {
@@ -639,9 +639,9 @@ pre tt:after {
 @font-face {
   font-family: 'SF Compact Display';
   font-display: swap;
-  src: url("../fonts/SF-Compact-Display-Semibold.otf") format("opentype"),
-        url("../fonts/SF-Compact-Display-Semibold.woff") format("woff"), 
-        url("../fonts/SF-Compact-Display-Semibold.ttf") format("truetype"); 
+  src: url("../../fonts/SF-Compact-Display-Semibold.otf") format("opentype"),
+        url("../../fonts/SF-Compact-Display-Semibold.woff") format("woff"), 
+        url("../../fonts/SF-Compact-Display-Semibold.ttf") format("truetype"); 
   font-weight: 500;
 }
 

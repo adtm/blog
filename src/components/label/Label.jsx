@@ -17,7 +17,7 @@ const Container = styled.button`
 const StyledLabel = styled.span`
     font-family: "SF Compact Display";
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
     color: #fff;
 `

@@ -2,8 +2,8 @@ import React from "react"
 import styled from "styled-components"
 import { graphql } from "gatsby"
 
-import Post from "../components/QuickPost"
-import Layout from "../components/layout"
+import Post from "../templates/QuickPost"
+import Layout from "../components/layout/layout"
 
 const Container = styled.div`
   margin: auto;
@@ -18,14 +18,17 @@ const Container = styled.div`
       margin-top: 50px;
     }
   }
+  text-align: center;
+  font-size: 20px;
 `
 
 const HomePage = ({ data: { allMarkdownRemark } }) => (
   <Layout>
     <Container>
-      {allMarkdownRemark.edges.map(({ node }) => (
+      <p>🍕 Comming Soon! 🦄</p>
+      {/* {allMarkdownRemark.edges.map(({ node }) => (
         <Post {...node.frontmatter} html={node.html} />
-      ))}
+      ))} */}
     </Container>
   </Layout>
 )
