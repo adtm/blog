@@ -1,34 +1,41 @@
 ---
-path: '/24-birthday'
-date: '2019-08-25'
-title: 'My views at 24'
-tags: ['personal']
+path: "/24-birthday"
+date: "2019-08-25"
+title: "My views at 24"
+tags: ["personal"]
 ---
 
+I like birthdays.
 
-I like birthdays cause it's that moment in year when one can reflect what happened. I promised last year to put myself and don't hesitate anymore. As a result the previous year was quite a roller coaster for me and it shaped me a lot. 
+It's usually the perfect time to reflect on what happened in those past 365 days. And make guesses for the upcoming ones. For me, the previous year was an American roller coaster. But a little dose of adrenaline doesn't hurt anyone at 23.
 
-As I like to write weekly reflections, this time I decided to make a blog and write my first post about my priorities and views. Most of these things may sound simple, but that's how everything should be in life.
+This year I decided to start with reflection. And whereas I write everything in my journal, this time publish an article about my thoughts. Specifically my views and what I think is important for a person.
+
+Most of these views are formed by many people and experiences. Working for different companies, starting startups and seeing them fail, traveling abroad and meeting new people. Most of the people I know are a part of the journey, one way or another.
 
 ### 1. People
 
 I like people. And they're everything.
 
-But one who knew me a couple years would be surprised with this statement. I was that typical developer who would code inside and outside of work, focus on learning the new trendy technologies and read a bunch of articles about things I didn't have a clue.
+But a few years ago my views were very different. I was the tipical software engineer. Working long hours and thinking that technical skill is the most important thing to be a someone. Learning trendy technologies and forgetting everything a couple of months later. Reading a bunch of articles about things I still don't have a clue.
 
-And as I still do most of these things, I do them for very different reasons. I don't care about those weekly new technologies popping up, I have my tools and if I'll need something - I'll learn it. I don't code cause I want to try a new technology - I build products with my friends for other people, because I feel the thrill of talking to users, understanding their behaviour and seeing them smile.
+And don't get me wrong - technical skill is very important. But now I look at learning as a path, not the end result. It's a million times more interesting to work on real projects with people and talking to customers than cramming books. Joining an incubator with friends and going in for the journey. Going abroad to part in hackatons meeting the locals. Taking challenges and making the best of them.
 
-In most of the cases your customers don't care what technology you're using - they want the result for which they agree to pay money. It's about them, not about you.
+Humans are social beings. There's no reason to be famous or work for the best company in the world if you're lonely and miserable. Find your people and be a someone for them.
+
+You'll learn more than you ever thought you could.
+About others and yourself.
+
 
 ### 2. Purpose
 
-In my view, purpose is one of the most important things in life. If you're doing something you don't know why, you'll stop it. It can be the desire of freedom, starting a personal company or wanting to have impact in a specific niche. Whatever it may be, you have to understand why you want something. 
+In my view, purpose is one of the most important things in life. If you're doing something you don't know why, you'll stop it. It can be the desire of freedom, starting a personal company or wanting to have impact in a specific niche. Whatever it may be, you have to understand why you want something.
 
 And it's normal that it may change, but the stimulus of wanting money or fame are too weak for the long run. When you understand the why and be ready to immense yourself - you'll create your own path and will start to love the journey, not the end result.
 
 And not everyone should want to change the world. If you're a lawyer and you're passion is cooking, nobody is stopping you from taking on the journey. Life is not about money, it's about happiness. And if you'll try to chase the other, money will come up by itself. Always, the beginnings are the hardest.
 
-For me, being a developer is one of the paths towards happiness. Creating value for others, making an impact is rewarding by itself, it keeps me going. And as most of us work 9 - 5, it's rewarding when your work has some impact - internally or outside the company. For example, when I worked for one company we had to create an internal system for the music industry. The project was great, it had all the technologies one could want, the freedom to offer new solutions, but it lacked feedback. We created the system from scratch for more than a year, but no one showed any interest in what we were doing, nobody said anything, nobody cared. It was as if we're creating this for ourselves. I couldn't see the purpose of my work, except being a resource for the company.
+For me, being a developer is one of the paths towards happiness. Creating value for others, making an impact is rewarding by itself, it keeps me going. And as most of us work 9 - 5, it's rewarding when your work has some impact - internally or outside the company. For example, when I worked for one company the project was great. It had all the technologies one could want, the freedom to offer new solutions, but it lacked feedback. We created the system from scratch for more than a year, but no one showed any interest in what we were doing, nobody said anything, nobody cared. It was as if we're creating this for ourselves. I couldn't see the purpose of my work, except being a resource for the company.
 
 Of course, one could argue that working with awesome technologies is rewarding by itself. But truth be told, I don't care about technologies too much, I care about people and being happy.
 
