@@ -41,9 +41,15 @@ const Post = ({ title, date, html, tags, path }) => (
     <PostContainer to={path}>
       <Title>{title}</Title>
       <Date>{date}</Date>
-      <Text dangerouslySetInnerHTML={{ __html: html.substring(3, 180).concat("...") }}>
-
-      </Text>
+      <Text
+        dangerouslySetInnerHTML={{
+          __html: html
+            .substring(3, 180)
+            .replace("<p>", "")
+            .replace("</p>", "")
+            .concat("..."),
+        }}
+      ></Text>
     </PostContainer>
   </Container>
 )

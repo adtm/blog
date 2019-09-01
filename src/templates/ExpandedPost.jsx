@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
 
 import Label from "../components/label/Label"
@@ -20,14 +19,8 @@ const Container = styled.div`
   }
 `
 
-const PostContainer = styled(Link)`
-  font-family: "SF Compact Display";
-  color: #000;
-  text-decoration: none;
-`
-
 const Title = styled.h3`
-  font-size: 32px;
+  font-size: 34px;
   font-weight: 600;
   margin: 10px 0px;
 `
@@ -39,8 +32,9 @@ const Date = styled.p`
 `
 
 const Text = styled.div`
-  font-size: 16px;
-  line-height: 1.8;
+  font-size: 18px;
+  line-height: 1.8; 
+  color: rgba(0, 0, 0, 0.92);
 `
 
 const ExpandedPost = ({
@@ -56,11 +50,10 @@ const ExpandedPost = ({
       {tags.map(tag => (
         <Label name={tag} />
       ))}
-      <PostContainer to={path}>
-        <Title>{title}</Title>
-        <Date>{date}</Date>
-        <Text dangerouslySetInnerHTML={{ __html: html }}></Text>
-      </PostContainer>
+
+      <Title>{title}</Title>
+      <Date>{date}</Date>
+      <Text dangerouslySetInnerHTML={{ __html: html }}></Text>
     </Container>
   </Layout>
 )

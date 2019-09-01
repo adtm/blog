@@ -18,17 +18,14 @@ const Container = styled.div`
       margin-top: 50px;
     }
   }
-  text-align: center;
-  font-size: 20px;
 `
 
 const HomePage = ({ data: { allMarkdownRemark } }) => (
   <Layout>
     <Container>
-      <p>🍕 Comming Soon! 🦄</p>
-      {/* {allMarkdownRemark.edges.map(({ node }) => (
+      {allMarkdownRemark.edges.map(({ node }) => (
         <Post {...node.frontmatter} html={node.html} />
-      ))} */}
+      ))}
     </Container>
   </Layout>
 )
