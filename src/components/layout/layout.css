@@ -629,15 +629,7 @@ pre tt:after {
         url("../../fonts/SF-Compact-Display-Regular.woff") format("woff"), 
         url("../../fonts/SF-Compact-Display-Regular.ttf") format("truetype"); 
 }
-
-/* @font-face {
-  font-family: 'SF Compact Display';
-  src:  url("../../fonts/SF-Compact-Display-Medium.otf") format("opentype"),
-        url("../../fonts/SF-Compact-Display-Medium.woff") format("woff"), 
-        url("../../fonts/SF-Compact-Display-Medium.ttf") format("truetype");
-  font-weight: 400;
-} */
-
+ 
 @font-face {
   font-family: 'SF Compact Display';
   font-display: swap;

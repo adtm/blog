@@ -2,16 +2,16 @@ import React from "react"
 import styled from "styled-components"
 import { graphql } from "gatsby"
 
-import Post from "../templates/QuickPost"
+import Post from "../components/post/Preview"
 import Layout from "../components/layout/layout"
 
 const Container = styled.div`
   margin: auto;
+  max-width: 640px;
   padding: 20px;
   margin-top: 100px;
   margin-bottom: 20px;
-  max-width: 460px;
-  font-family: "SF Compact Display";
+
 
   @media screen and (max-width: 480px) {
     & {

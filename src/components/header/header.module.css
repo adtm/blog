@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  color: #000;
+}
+
+.link {
+  color: #000;
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: red;
+}
