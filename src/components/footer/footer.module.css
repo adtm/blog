@@ -1,0 +1,15 @@
+.container {
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+  cursor: pointer;
+}

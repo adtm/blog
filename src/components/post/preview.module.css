@@ -1,0 +1,20 @@
+.title {
+  margin-bottom: 15px;
+}
+
+.date {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  color: grey;
+}
+
+.link {
+  color: #000;
+  text-decoration: none;
+}
+
+.text {
+  font-size: 16px;
+}
+ 

@@ -1,8 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Blog",
-    description:
-      "A simple place where I try to share my knowledge and stories about various topics which intrigue me.",
+    description: "A simple place where I try to share my knowledge and stories about various topics which intrigue me.",
     author: `Tomas Eglinskas`,
   },
   plugins: [
