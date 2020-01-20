@@ -13,3 +13,11 @@
     color: grey;
     margin-bottom: 50px;
 }
+
+.text p {
+    line-height: 1.7;
+}
+
+.text h3 {
+    margin: 50px 0px 40px 0px;
+}

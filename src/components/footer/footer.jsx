@@ -7,11 +7,16 @@ import LinkedInSVG from "../../icons/linkedin.svg"
 
 const Footer = () => (
   <div className={styles.container}>
-    <h6>Tomas Eglinskas</h6>
     <div>
-      <img src={GithubSVG} className={styles.icon} />
-      <img src={TwitterSVG} className={styles.icon} />
-      <img src={LinkedInSVG} className={styles.icon} />
+      <a href="https://lt.linkedin.com/in/tomas-eglinskas">
+        <img src={LinkedInSVG} className={styles.icon} />
+      </a>
+      <a href="https://twitter.com/tomas_eglinskas">
+        <img src={TwitterSVG} className={styles.icon} />
+      </a>
+      <a href="https://github.com/adtm">
+        <img src={GithubSVG} className={styles.icon} />
+      </a> 
     </div>
   </div>
 )

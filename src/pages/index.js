@@ -1,14 +1,14 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Post from "../components/post/Preview"
+import Preview from "../components/post/Preview"
 import Layout from "../components/layout/layout"
 
 const HomePage = ({ data: { allMarkdownRemark } }) => (
   <Layout>
     <div>
       {allMarkdownRemark.edges.map(({ node }) => (
-        <Post {...node.frontmatter} html={node.html} />
+        <Preview {...node.frontmatter} html={node.html} />
       ))}
     </div>
   </Layout>
@@ -23,6 +23,7 @@ export const query = graphql`
           html
           frontmatter {
             title
+            path
             date(formatString: "MMMM DD, YYYY")
           }
         }

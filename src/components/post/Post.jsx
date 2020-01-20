@@ -16,7 +16,7 @@ const Post = ({
     <article className={styles.container}>
       <h1 className={styles.title}>{title}</h1>
       <h3 className={styles.date}>{date}</h3>
-      <div dangerouslySetInnerHTML={{ __html: html }}></div>
+      <div className={styles.text} dangerouslySetInnerHTML={{ __html: html }}></div>
       <Footer />
     </article>
   </Layout>
