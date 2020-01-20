@@ -1,27 +1,15 @@
 import React from "react"
-import PropTypes from "prop-types"
-
 
 import Header from "../header/Header"
-import "./layout.css"
+import styles from './layout.module.css'
 
-const styles = {
-  container: {
-    margin: "auto",
-    maxWidth: 1024,
-    padding: 40,
-  },
-}
+import "./global-layout.css"
 
 const Layout = ({ children }) => (
-  <div style={styles.container}>
+  <div className={styles.container}>
     <Header />
     {children}
   </div>
 )
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
 
 export default Layout
