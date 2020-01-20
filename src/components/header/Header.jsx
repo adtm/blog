@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 
 const Header = () => (
   <div className={styles.header}>
-    <p className={styles.title}>Tomas Eglinskas</p>
+    <Link className={styles.title} to="/"> Tomas Eglinskas</Link>
     <div>
       <Link className={styles.link} to="/">Posts</Link>
       <Link className={styles.link} to="/about">About</Link>

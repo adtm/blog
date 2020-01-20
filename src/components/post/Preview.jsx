@@ -10,7 +10,7 @@ const Post = ({ title, date, html, path }) => (
     <Link className={styles.link} to={path}>
       <h2 className={styles.title}>{title}</h2>
       <h4 className={styles.date}>{date}</h4>
-      <p>
+      <p className={styles.text}>
         {html
           .substring(3, PREVIEW_LIMIT)
           .replace("<p>", "")
