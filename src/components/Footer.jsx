@@ -11,8 +11,8 @@ const Footer = () => (
 
 const Container = styled.footer`
   position: absolute;
-  bottom: 40px;
   left: 50px;
+  bottom: 40px;
 `
 
 export default Footer
