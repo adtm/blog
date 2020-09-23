@@ -1,31 +1,22 @@
 module.exports = {
   siteMetadata: {
-    title: "Blog",
-    description: "A simple place where I try to share my knowledge and stories about various topics which intrigue me.",
+    title: `Tomas Eglinskas`,
     author: `Tomas Eglinskas`,
+    description: `Personal blog of Tomas Eglinskas`,
+    siteUrl: "https://www.tomas.life/",
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/about`, `/`],
+      },
+    },
     `gatsby-plugin-react-helmet`,
-    "gatsby-transformer-remark",
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-plugin-layout`,
       options: {
-        name: `pages`,
-        path: `${__dirname}/src/posts/`,
-      },
-    },
-    `gatsby-plugin-styled-components`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-145399538-1",
+        component: require.resolve(`./src/components/layout.js`),
       },
     },
     `gatsby-transformer-sharp`,
@@ -33,15 +24,18 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Tomas Eglinskas`,
-        short_name: `Blog`,
+        name: `gatsby-starter-default`,
+        short_name: `starter`,
         start_url: `/`,
-        background_color: `#fff`,
+        background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/circle-256.png`, // This path is relative to the root of the site.
+        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-offline`,
+
+    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.app/offline
+    // 'gatsby-plugin-offline',
   ],
 }
