@@ -12,6 +12,7 @@ module.exports = {
         precachePages: [`/about`, `/`],
       },
     },
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-layout`,
