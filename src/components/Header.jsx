@@ -44,11 +44,6 @@ const StyledLink = styled(Link)`
 `
 
 const CenterContainer = styled.div`
-  position: absolute;
-  left: 0; 
-  right: 0; 
-  margin-left: auto; 
-  margin-right: auto;
   text-align: center;
   display: flex;
   justify-content: center;

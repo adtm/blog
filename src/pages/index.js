@@ -12,21 +12,12 @@ class IndexPage extends React.Component {
           title="About - Tomas Eglinskas"
           keywords={[`blog`, `Tomas Eglinskas`, `programming`, `tech`, 'medium']}
         />
-        <Container>
-          <About />
-        </Container>
+        <About />
       </>
     )
   }
 }
 
-// 40px wave icon
-const Container = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: calc(100vh - 120px); 
-  margin: 40px;
-`
+
 
 export default IndexPage
