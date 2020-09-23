@@ -16,7 +16,7 @@ const Header = () => (
     {/* <StyledLink>
       <Icon src={Moon_Icon} />
     </StyledLink> */}
-    <StyledLink to="/blog">
+    <StyledLink>
       <Center>
         <span>Blog</span>
         <OverIcon>

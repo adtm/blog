@@ -27,6 +27,18 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`
+    `gatsby-plugin-sharp`,
+    {
+     resolve: `gatsby-plugin-manifest`,
+     options: {
+      name: `Tomas Eglinskas`,
+      short_name: `Blog`,
+      start_url: `/`,
+      background_color: `#fff`,
+      theme_color: `#663399`,
+      display: `minimal-ui`,
+      icon: `src/images/fav.png`
+    }, 
+    }
   ],
 }
