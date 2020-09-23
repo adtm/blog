@@ -1,25 +1,22 @@
 module.exports = {
   siteMetadata: {
-    title: "Blog",
-    description: "A simple place where I try to share my knowledge and stories about various topics which intrigue me.",
+    title: `Tomas Eglinskas`,
     author: `Tomas Eglinskas`,
+    description: `Personal blog of Tomas Eglinskas`,
+    siteUrl: "https://www.tomas.life/",
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    "gatsby-transformer-remark",
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-plugin-offline`,
       options: {
-        name: `pages`,
-        path: `${__dirname}/src/posts/`,
+        precachePages: [`/about`, `/`],
       },
     },
-    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-plugin-layout`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        component: require.resolve(`./src/components/layout.js`),
       },
     },
     {
@@ -29,19 +26,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Tomas Eglinskas`,
-        short_name: `Blog`,
-        start_url: `/`,
-        background_color: `#fff`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/circle-256.png`, // This path is relative to the root of the site.
-      },
-    },
-    `gatsby-plugin-offline`,
+    `gatsby-plugin-sharp`
   ],
 }

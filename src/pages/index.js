@@ -1,35 +1,32 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from 'react'
+import styled from 'styled-components'
+import About from '../components/About'
+import SEO from '../components/seo'
 
-import Preview from "../components/post/Preview"
-import Layout from "../components/layout/layout"
 
-const HomePage = ({ data: { allMarkdownRemark } }) => (
-  <Layout>
-    <div>
-      {allMarkdownRemark.edges.map(({ node }) => (
-        <Preview {...node.frontmatter} html={node.html} />
-      ))}
-    </div>
-  </Layout>
-)
-
-export const query = graphql`
-  query HomePageQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
-      edges {
-        node {
-          id
-          html
-          frontmatter {
-            title
-            path
-            date(formatString: "MMMM DD, YYYY")
-          }
-        }
-      }
-    }
+class IndexPage extends React.Component {
+  render() {
+    return (
+      <>
+        <SEO
+          title="About - Tomas Eglinskas"
+          keywords={[`blog`, `Tomas Eglinskas`, `programming`, `tech`, 'medium']}
+        />
+        <Container>
+          <About />
+        </Container>
+      </>
+    )
   }
+}
+
+// 40px wave icon
+const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 40px); 
+  padding: 20px;
 `
 
-export default HomePage
+export default IndexPage
