@@ -9,7 +9,7 @@ class IndexPage extends React.Component {
     return (
       <>
         <SEO
-          title="About - Tomas Eglinskas"
+          title="About"
           keywords={[`blog`, `Tomas Eglinskas`, `programming`, `tech`, 'medium']}
         />
         <About />
