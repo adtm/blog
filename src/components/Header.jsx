@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { useColorMode, Button, Flex, Box, IconButton } from '@chakra-ui/core';
+import { useColorMode, Button, Flex, IconButton } from '@chakra-ui/core';
 
 const Header = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -12,7 +12,6 @@ const Header = () => {
       maxWidth={700}
       width="100%"
       as="nav"
-      mx="auto"
       mb={10}
       height={100}
     >
