@@ -1,53 +1,41 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import styled from 'styled-components'
+import { useColorMode, Button, Flex, Box, IconButton } from '@chakra-ui/core';
 
-import Icon from './Icon'
+const Header = () => {
+  const { colorMode, toggleColorMode } = useColorMode();
 
-import Moon_Icon from '../images/icons/moon.svg'
-import UnderMaintenance_Logo from '../images/construction.png'
+  return (
+    <Flex
+      justifyContent="space-between"
+      alignItems="center"
+      maxWidth={700}
+      width="100%"
+      as="nav"
+      mx="auto"
+      mb={10}
+      height={100}
+    >
+      <IconButton
+        aria-label="Toggle dark mode"
+        icon={colorMode === 'dark' ? 'sun' : 'moon'}
+        onClick={toggleColorMode}
+      />
+      <Box>
+        <Link to="/">
+          <Button fontWeight={400} as="a" variant="ghost" p={[1, 4]} aria-label="About">
+            About
+          </Button>
+        </Link>
+        <Link to="/blog">
+          <Button fontWeight={400} as="a" variant="ghost" p={[1, 4]} aria-label="Blog">
+            Blog
+          </Button>
+        </Link>
+      </Box>
+    </Flex>
+  )
+}
 
-
-const Header = () => (
-  <CenterContainer>
-    <StyledLink to="/">
-      <span>About</span>
-    </StyledLink>
-    {/* <StyledLink>
-      <Icon src={Moon_Icon} />
-    </StyledLink> */}
-    <StyledLink>
-      <Center>
-        <span>Blog</span>
-        <OverIcon>
-          <Icon src={UnderMaintenance_Logo} />
-        </OverIcon>
-      </Center>
-    </StyledLink>
-  </CenterContainer>
-)
-
-const Center = styled.div`
-  position: relative;
-`
-
-const OverIcon = styled.div`
-  position: absolute;
-  top: -5px;
-`
-
-const StyledLink = styled(Link)`
-  text-decoration: none;
-  color: inherit;
-  margin: 0;
-  padding-left: 30px;
-`
-
-const CenterContainer = styled.div`
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`
 
 export default Header

@@ -2,14 +2,15 @@ module.exports = {
   siteMetadata: {
     title: `Tomas Eglinskas`,
     author: `Tomas Eglinskas`,
-    description: `Personal blog of Tomas Eglinskas`,
-    siteUrl: "https://www.tomas.life/",
+    description: `Software Engineer, system design and good food maniac`,
+    siteUrl: "https://tomas.life/",
   },
   plugins: [
+    "gatsby-plugin-chakra-ui",
     {
       resolve: `gatsby-plugin-offline`,
       options: {
-        precachePages: [`/about`, `/`],
+        precachePages: [`/`, `/blog`],
       },
     },
     `gatsby-plugin-styled-components`,
@@ -17,7 +18,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-layout`,
       options: {
-        component: require.resolve(`./src/components/layout.js`),
+        component: require.resolve(`./src/components/Container.jsx`),
       },
     },
     {
@@ -32,7 +33,8 @@ module.exports = {
      resolve: `gatsby-plugin-manifest`,
      options: {
       name: `Tomas Eglinskas`,
-      short_name: `Blog`,
+      short_name: `tomas.life`,
+      description: "Software Engineer, system design and good food maniac",
       start_url: `/`,
       background_color: `#fff`,
       theme_color: `#663399`,

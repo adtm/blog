@@ -1,18 +1,18 @@
 import React from 'react'
 
-import About from '../components/pages/About'
+import Blog from '../components/pages/Blog'
 import SEO from '../components/seo'
 
 
-class IndexPage extends React.Component {
+class BlogPage extends React.Component {
   render() {
     return (
       <>
         <SEO
-          title="About"
+          title="Blog"
           keywords={[`blog`, `Tomas Eglinskas`, `programming`, `tech`, 'medium']}
         />
-        <About />
+        <Blog />
       </>
     )
   }
@@ -20,4 +20,4 @@ class IndexPage extends React.Component {
 
 
 
-export default IndexPage
+export default BlogPage
