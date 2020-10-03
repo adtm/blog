@@ -44,7 +44,7 @@ const Footer = () => {
             variant="ghost"
           />
         </Link>
-        <Link href="https://twitter.com/adtm" title="Twitter" isExternal>
+        <Link href="https://twitter.com/tomas_eglinskas" title="Twitter" isExternal>
           <IconButton
             aria-label="Twitter"
             icon="twitter"
