@@ -21,7 +21,7 @@ const Header = () => {
         icon={colorMode === 'dark' ? 'sun' : 'moon'}
         onClick={toggleColorMode}
       />
-      <Box>
+      <div>
         <Link to="/">
           <Button fontWeight={400} as="a" variant="ghost" aria-label="About">
             About
@@ -32,7 +32,7 @@ const Header = () => {
             Blog
           </Button>
         </Link>
-      </Box>
+      </div>
     </Flex>
   )
 }
