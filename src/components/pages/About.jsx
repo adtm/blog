@@ -2,7 +2,6 @@ import React from 'react'
 import { Text, Link } from '@chakra-ui/core';
 
 import Icon from '../Icon'
-import { Link as GatsbyLink } from 'gatsby';
 import Subscribe from '../Subscribe/Subscribe';
 
 import WaveingHand from '../../images/waving_hand.png'
@@ -12,7 +11,7 @@ const About = () => (
     <Icon src={WaveingHand} alt="Hand waving" />
     <Text mb={4}>
       I'm Tomas, a software engineer&nbsp;
-      <Link as={GatsbyLink} href="https://wix.com" color="blue.500">
+      <Link href="https://wix.com" color="blue.500">
         @Wix
       </Link>
       , working on big scale systems and keeping everyones code clean.
