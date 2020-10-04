@@ -28,30 +28,33 @@ const Posts = ({ edges }) => {
   )
 }
 
-export default () => (
-  <StaticQuery
-    query={graphql`
-      query Query {
-        allMdx {
-          edges {
-            node {
-              id
-              fields {
-                slug
-              }
-              frontmatter {
-                title
-                tags
-                summary
-                isPublished
-              }
-            }
-          }
-        }
-      }
-    `
-    }
-    render={({ allMdx: { edges } }) => <Posts edges={edges} />}
-  />
-)
+// @TODO: temporary
+export default () => <Posts edges={[]} />
+
+// export default () => (
+//   <StaticQuery
+//     query={graphql`
+//       query Query {
+//         allMdx {
+//           edges {
+//             node {
+//               id
+//               fields {
+//                 slug
+//               }
+//               frontmatter {
+//                 title
+//                 tags
+//                 summary
+//                 isPublished
+//               }
+//             }
+//           }
+//         }
+//       }
+//     `
+//     }
+//     render={({ allMdx: { edges } }) => <Posts edges={edges} />}
+//   />
+// )
 
