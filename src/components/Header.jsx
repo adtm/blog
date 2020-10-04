@@ -22,12 +22,12 @@ const Header = () => {
       />
       <div>
         <Link to="/">
-          <Button fontWeight={400} as="a" variant="ghost" aria-label="About">
+          <Button fontWeight={400}  variant="ghost" aria-label="About">
             About
           </Button>
         </Link>
         <Link to="/blog">
-          <Button fontWeight={400} as="a" variant="ghost" aria-label="Blog">
+          <Button fontWeight={400}    variant="ghost" aria-label="Blog">
             Blog
           </Button>
         </Link>

@@ -7,6 +7,7 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-chakra-ui",
+    "gatsby-plugin-use-dark-mode",
     {
       resolve: `gatsby-plugin-offline`,
       options: {
