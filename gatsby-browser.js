@@ -1,7 +1,7 @@
 import React from "react"
 import { ColorModeProvider, ThemeProvider, CSSReset } from "@chakra-ui/core"
 
-import theme from "./src/gatsby-plugin-chakra-ui/theme"
+import theme from "./theme/theme"
 
 export const onServiceWorkerUpdateReady = () => {
   const answer = window.confirm(
