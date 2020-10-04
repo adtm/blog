@@ -21,16 +21,16 @@ const Post = ({
   )
 }
 
-export const pageQuery = graphql`
-  query PostQuery($id: String) {
-    mdx(id: { eq: $id }) {
-      id
-      body
-      frontmatter {
-        title
-      }
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   query PostQuery($id: String) {
+//     mdx(id: { eq: $id }) {
+//       id
+//       body
+//       frontmatter {
+//         title
+//       }
+//     }
+//   }
+// `
 
 export default Post;

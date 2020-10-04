@@ -8,27 +8,27 @@ module.exports = {
   plugins: [
     "gatsby-plugin-chakra-ui",
     "gatsby-plugin-use-dark-mode",
-    {
-      resolve: `gatsby-plugin-page-creator`,
-      options: {
-        path: `${__dirname}/src/components/blog/posts`
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `posts`,
-        path: `${__dirname}/src/components/blog/posts`
-      },
-    },
-    {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        defaultLayouts: {
-          posts: require.resolve("./src/components/blog/Post.jsx"),
-        },
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-page-creator`,
+    //   options: {
+    //     path: `${__dirname}/src/components/blog/posts`
+    //   }
+    // },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `posts`,
+    //     path: `${__dirname}/src/components/blog/posts`
+    //   },
+    // },
+    // {
+    //   resolve: `gatsby-plugin-mdx`,
+    //   options: {
+    //     defaultLayouts: {
+    //       posts: require.resolve("./src/components/blog/Post.jsx"),
+    //     },
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-offline`,
       options: {
