@@ -1,13 +1,23 @@
 import React from 'react'
+import { Heading, Text } from '@chakra-ui/core'
+import { MDXProvider } from "@mdx-js/react"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
 const Post = ({
   data: { mdx }
 }) => {
 
-  const { title } = mdx.frontmatter
+  const { frontmatter: { title }, body } = mdx
 
   return (
-    <div>{title}</div>
+    <div style={{ maxWidth: 700 }}>
+      <Heading as="h1">{title}</Heading>
+      <Text>
+        <MDXProvider >
+          <MDXRenderer>{body}</MDXRenderer>
+        </MDXProvider>
+      </Text>
+    </div>
   )
 }
 

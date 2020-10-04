@@ -1,8 +1,7 @@
-import React from 'react'
+import React from "react"
 
-import About from '../components/pages/About'
-import SEO from '../components/seo'
-
+import About from "../components/pages/About"
+import SEO from "../components/seo"
 
 class IndexPage extends React.Component {
   render() {
@@ -10,14 +9,18 @@ class IndexPage extends React.Component {
       <>
         <SEO
           title="About"
-          keywords={[`blog`, `Tomas Eglinskas`, `programming`, `tech`, 'medium']}
+          keywords={[
+            `blog`,
+            `Tomas Eglinskas`,
+            `programming`,
+            `tech`,
+            "medium",
+          ]}
         />
         <About />
       </>
     )
   }
 }
-
-
 
 export default IndexPage

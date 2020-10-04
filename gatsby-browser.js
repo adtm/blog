@@ -1,6 +1,9 @@
 import React from "react"
 import { ThemeProvider, ColorModeProvider, CSSReset } from "@chakra-ui/core"
+import { MDXProvider } from '@mdx-js/react';
+
 import theme from "./src/gatsby-plugin-chakra-ui/theme"
+import MDXComponents from "./src/components/MDXComponent";
 
 export const onServiceWorkerUpdateReady = () => {
   const answer = window.confirm(
@@ -14,9 +17,11 @@ export const onServiceWorkerUpdateReady = () => {
 
 export const wrapRootElement = ({ element }) => (
   <ThemeProvider theme={theme}>
-    <ColorModeProvider>
-      <CSSReset />
-      {element}
-    </ColorModeProvider>
+    <MDXProvider components={MDXComponents}>
+      <ColorModeProvider value="light">
+        <CSSReset />
+        {element}
+      </ColorModeProvider>
+    </MDXProvider>
   </ThemeProvider>
 )
