@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { useColorMode, Button, Flex, IconButton } from '@chakra-ui/core';
+import { Button, Flex, IconButton } from '@chakra-ui/core';
+import { useColorMode } from "@chakra-ui/color-mode"
 
 const Header = () => {
   const { colorMode, toggleColorMode } = useColorMode();
