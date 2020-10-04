@@ -1,7 +1,5 @@
 import React from 'react';
-
-import { Flex, Link, IconButton } from '@chakra-ui/core';
-import { useColorMode } from "@chakra-ui/color-mode"
+import { useColorMode, Flex, Link, IconButton } from '@chakra-ui/core';
 
 const Footer = () => {
   const { colorMode } = useColorMode();

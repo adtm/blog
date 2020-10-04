@@ -8,9 +8,9 @@ import {
   Button,
   Text,
   useToast,
+  useColorMode
 } from '@chakra-ui/core';
 import subscribeFn from './subscribeFn'
-import { useColorMode } from "@chakra-ui/color-mode"
 
 
 const Subscribe = () => {
