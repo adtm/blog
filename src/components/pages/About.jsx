@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, Link } from '@chakra-ui/core';
+import { Text, Link } from '@chakra-ui/react';
 
 import Icon from '../Icon'
 import Subscribe from '../Subscribe/Subscribe';

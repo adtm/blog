@@ -7,7 +7,7 @@ import {
   Text,
   Divider,
   Link,
-} from '@chakra-ui/core';
+} from '@chakra-ui/react';
 import CodeBlock from './Codeblock';
 
 const MDXComponents = {

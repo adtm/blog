@@ -1,5 +1,5 @@
 import React from 'react'
-import { Heading, Text } from '@chakra-ui/core'
+import { Heading, Text } from '@chakra-ui/react'
 import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 

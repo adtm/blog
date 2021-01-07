@@ -2,7 +2,7 @@ import React from "react"
 
 import BlogPosts from "../components/blog/Posts"
 import SEO from "../components/seo"
-import { Text, Code } from "@chakra-ui/core"
+import { Text, Code } from "@chakra-ui/react"
 
 import Icon from "../components/Icon"
 import FountainPen from "../images/fountain_pen.png"

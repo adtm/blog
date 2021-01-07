@@ -1,5 +1,5 @@
 import React from "react"
-import { ThemeProvider, ColorModeProvider, CSSReset } from "@chakra-ui/core"
+import { ChakraProvider } from "@chakra-ui/react"
 import { MDXProvider } from '@mdx-js/react';
 
 import theme from "./src/gatsby-plugin-chakra-ui/theme"
@@ -16,12 +16,9 @@ export const onServiceWorkerUpdateReady = () => {
 }
 
 export const wrapRootElement = ({ element }) => (
-  <ThemeProvider theme={theme}>
+  <ChakraProvider theme={theme}>
     <MDXProvider components={MDXComponents}>
-      <ColorModeProvider value="light">
-        <CSSReset />
-        {element}
-      </ColorModeProvider>
+      {element}
     </MDXProvider>
-  </ThemeProvider>
+  </ChakraProvider>
 )

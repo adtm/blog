@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Heading, Box, Tag, Text } from '@chakra-ui/core'
+import { Heading, Box, Tag, Text } from '@chakra-ui/react'
 
 const Tags = ({ tags }) => (
   <>

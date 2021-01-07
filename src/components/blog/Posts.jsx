@@ -1,6 +1,6 @@
 import React from 'react'
 import { StaticQuery, graphql } from "gatsby"
-import { Heading, Text, Stack } from '@chakra-ui/core';
+import { Heading, Text, Stack } from '@chakra-ui/react';
 
 import Card from './Card';
 

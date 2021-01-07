@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { useColorMode, Button, Flex, IconButton } from '@chakra-ui/core';
+import { useColorMode, Button, Flex, IconButton } from '@chakra-ui/react';
+import { MoonIcon, SunIcon } from "@chakra-ui/icons"
 
 const Header = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -15,19 +16,23 @@ const Header = () => {
       mb={10}
       height={100}
     >
-      <IconButton
-        aria-label="Toggle dark mode"
-        icon={colorMode === 'dark' ? 'sun' : 'moon'}
-        onClick={toggleColorMode}
-      />
+      <IconButton onClick={toggleColorMode} aria-label="Toggle dark mode" >
+        {
+          colorMode === 'dark' ?
+            <SunIcon /> :
+            <MoonIcon />
+
+        }
+      </IconButton>
+
       <div>
         <Link to="/">
-          <Button fontWeight={400}  variant="ghost" aria-label="About">
+          <Button fontWeight={400} variant="ghost" aria-label="About">
             About
           </Button>
         </Link>
         <Link to="/blog">
-          <Button fontWeight={400}    variant="ghost" aria-label="Blog">
+          <Button fontWeight={400} variant="ghost" aria-label="Blog">
             Blog
           </Button>
         </Link>

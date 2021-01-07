@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
-import { Flex, Stack } from '@chakra-ui/core'
+import { Flex, Stack } from '@chakra-ui/react'
 
 const Container = ({ children }) => (
     <Flex

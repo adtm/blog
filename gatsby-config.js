@@ -6,8 +6,7 @@ module.exports = {
     siteUrl: "https://tomas.life/",
   },
   plugins: [
-    "gatsby-plugin-chakra-ui",
-    "gatsby-plugin-use-dark-mode",
+    "@chakra-ui/gatsby-plugin", 
     // {
     //   resolve: `gatsby-plugin-page-creator`,
     //   options: {
