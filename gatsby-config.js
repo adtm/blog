@@ -6,7 +6,8 @@ module.exports = {
     siteUrl: "https://tomas.life/",
   },
   plugins: [
-    "@chakra-ui/gatsby-plugin", 
+    "@chakra-ui/gatsby-plugin",
+    `gatsby-plugin-sitemap`,
     // {
     //   resolve: `gatsby-plugin-page-creator`,
     //   options: {
@@ -26,6 +27,57 @@ module.exports = {
     //     defaultLayouts: {
     //       posts: require.resolve("./src/components/blog/Post.jsx"),
     //     },
+    //   },
+    // },
+    // {
+    //   resolve: `gatsby-plugin-feed-mdx`,
+    //   options: {
+    //     query: `
+    //       {
+    //         site {
+    //           siteMetadata {
+    //             title
+    //             description
+    //             siteUrl
+    //           }
+    //         }
+    //       }
+    //     `,
+    //     feeds: [
+    //       {
+    //         serialize: ({ query: { site, allMdx } }) => {
+    //           return allMdx.edges.map((edge) => {
+    //             return Object.assign({}, edge.node.frontmatter, {
+    //               description: edge.node.frontmatter.summary,
+    //               date: edge.node.frontmatter.date,
+    //               url: site.siteMetadata.siteUrl + '/' + edge.node.fields.slug,
+    //               guid: site.siteMetadata.siteUrl + '/' + edge.node.fields.slug
+    //             });
+    //           });
+    //         },
+    //         query: `
+    //           {
+    //             allMdx(
+    //               sort: { order: DESC, fields: [frontmatter___date] },
+    //             ) {
+    //               edges {
+    //                 node {
+    //                   fields { slug }
+    //                   frontmatter {
+    //                     title
+    //                     summary
+    //                     date
+    //                   }
+    //                 }
+    //               }
+    //             }
+    //           }
+    //         `,
+    //         output: '/rss.xml',
+    //         title: "Tomas Eglinskas RSS Feed",
+    //         match: "^/blog/", 
+    //       },
+    //     ],
     //   },
     // },
     {
