@@ -2,7 +2,7 @@ import React from "react"
 import { ChakraProvider } from "@chakra-ui/react"
 import { MDXProvider } from '@mdx-js/react';
 
-import theme from "./src/gatsby-plugin-chakra-ui/theme"
+import theme from "./src/chakra-ui/theme"
 import MDXComponents from "./src/components/MDXComponent";
 
 export const onServiceWorkerUpdateReady = () => {

@@ -10,7 +10,6 @@ const Posts = ({ edges }) => {
     .map(({ node: { id, frontmatter, fields } }) => ({ id, ...frontmatter, ...fields }))
     .filter(post => post.isPublished)
 
-
   return (
     <Stack marginRight="auto">
       <Heading mb={10} as="h1">All Posts</Heading>
@@ -28,33 +27,30 @@ const Posts = ({ edges }) => {
   )
 }
 
-// @TODO: temporary
-export default () => <Posts edges={[]} />
-
-// export default () => (
-//   <StaticQuery
-//     query={graphql`
-//       query Query {
-//         allMdx {
-//           edges {
-//             node {
-//               id
-//               fields {
-//                 slug
-//               }
-//               frontmatter {
-//                 title
-//                 tags
-//                 summary
-//                 isPublished
-//               }
-//             }
-//           }
-//         }
-//       }
-//     `
-//     }
-//     render={({ allMdx: { edges } }) => <Posts edges={edges} />}
-//   />
-// )
+export default () => (
+  <StaticQuery
+    query={graphql`
+      query Query {
+        allMdx {
+          edges {
+            node {
+              id
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+                tags
+                summary
+                isPublished
+              }
+            }
+          }
+        }
+      }
+    `
+    }
+    render={({ allMdx: { edges } }) => <Posts edges={edges} />}
+  />
+)
 
