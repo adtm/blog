@@ -1,27 +1,30 @@
-import React from 'react'
+import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import { Heading, Text, Stack } from '@chakra-ui/react';
+import { Heading, Text, Stack } from "@chakra-ui/react"
 
-import Card from './Card';
+import Card from "./Card"
 
 const Posts = ({ edges }) => {
-
   const publishedPosts = edges
-    .map(({ node: { id, frontmatter, fields } }) => ({ id, ...frontmatter, ...fields }))
-    .filter(post => post.isPublished)
+    .map(({ node: { id, frontmatter, fields } }) => ({
+      id,
+      ...frontmatter,
+      ...fields,
+    }))
+    .filter((post) => post.isPublished)
 
   return (
     <Stack marginRight="auto">
-      <Heading mb={10} as="h1">All Posts</Heading>
+      <Heading as="h1" fontSize={{ base: 22 }}>
+        All Posts
+      </Heading>
       <Stack>
-        {
-          publishedPosts.length === 0 && <Text>No posts, for now</Text>
-        }
-        {
-          publishedPosts.map(post => 
-            <Card key={post.id} {...post} />
-          )
-        }
+        {publishedPosts.length === 0 && (
+          <Text fontSize={{ base: 18 }}>No posts, for now</Text>
+        )}
+        {publishedPosts.map((post) => (
+          <Card key={post.id} {...post} />
+        ))}
       </Stack>
     </Stack>
   )
@@ -48,9 +51,7 @@ export default () => (
           }
         }
       }
-    `
-    }
+    `}
     render={({ allMdx: { edges } }) => <Posts edges={edges} />}
   />
 )
-

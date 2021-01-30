@@ -1,20 +1,25 @@
 {
   "name": "personal-website",
-  "private": true,
+  "private": false,
   "description": "Personal website",
   "version": "1.0.0",
   "author": "Tomas Eglinskas <tomas.eglinskas@gmail.com>",
   "scripts": {
+    "clean": "gatsby clean",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "serve": "gatsby build && gatsby serve",
     "start": "npm run develop",
-    "format": "prettier --write \"src/**/*.js\""
+    "lint": "eslint src/**/*.tsx",
+    "lint:fix": "npm run lint -- --fix",
+    "format": "prettier --write \"src/**/*.tsx\"",
+    "postinstall": "husky install"
   },
   "dependencies": {
     "@chakra-ui/gatsby-plugin": "^1.0.1",
     "@chakra-ui/icons": "^1.0.2",
     "@chakra-ui/react": "^1.1.2",
+    "@chakra-ui/theme-tools": "^1.0.3",
     "@emotion/react": "^11.1.4",
     "@emotion/styled": "^11.0.0",
     "@mdx-js/mdx": "^1.6.22",
@@ -50,9 +55,13 @@
     "react-transition-group": "^4.4.1",
     "styled-components": "^5.2.1",
     "three": "^0.124.0",
-    "use-dark-mode": "^2.3.1"
+    "typescript": "^4.1.3"
   },
   "devDependencies": {
-    "prettier": "^2.2.1"
+    "@typescript-eslint/eslint-plugin": "^4.14.0",
+    "@typescript-eslint/parser": "^4.14.0",
+    "eslint": "^7.18.0",
+    "husky": "^5.0.8",
+    "prettier": "2.2.1"
   }
 }

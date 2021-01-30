@@ -1,18 +1,18 @@
-import React from 'react'
-import { Heading, Text } from '@chakra-ui/react'
+import React from "react"
+import { Heading, Text } from "@chakra-ui/react"
 import { MDXProvider } from "@mdx-js/react"
 
-import { graphql } from 'gatsby'
+import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
-const BlogPostTemplate = ({
-  data: { mdx }
-}) => {
-  
-  const { frontmatter: { title }, body } = mdx
+const Template = ({ data: { mdx } }) => {
+  const {
+    frontmatter: { title },
+    body,
+  } = mdx
 
   return (
-    <MDXProvider >
+    <MDXProvider>
       <div style={{ maxWidth: 700 }}>
         <Heading as="h1">{title}</Heading>
         <Text>
@@ -35,4 +35,4 @@ export const pageQuery = graphql`
   }
 `
 
-export default BlogPostTemplate;
+export default Template

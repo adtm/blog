@@ -10,11 +10,10 @@ class IndexPage extends React.Component {
         <SEO
           title="About"
           keywords={[
-            `blog`,
-            `Tomas Eglinskas`,
-            `programming`,
-            `tech`,
-            "medium",
+            "Tomas Eglinskas",
+            "Software Engineer",
+            "Lithuania",
+            "Blog"
           ]}
         />
         <About />
