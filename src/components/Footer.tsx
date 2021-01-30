@@ -23,7 +23,7 @@ const Footer = () => (
       justifyContent="flex-end"
     >
       <TextLink
-        name="tomas.eglinskas@gmail.com"
+        name="Email"
         href="mailto:tomas.eglinskas@gmail.com"
       />
       <TextLink

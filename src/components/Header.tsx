@@ -22,7 +22,7 @@ const Header = () => {
     >
       <Heading
         as="h1"
-        fontSize={{ base: 20, md: 37 }}
+        fontSize={{ base: "18px", sm: 20,  md: 37 }}
         letterSpacing={1}
         fontWeight={400}
       >
@@ -41,7 +41,7 @@ const Header = () => {
       >
         <Link to="/">
           <Button
-            fontSize={{ base: 20, md: 37 }}
+            fontSize={{ base: "18px", sm: 20,  md: 37 }}
             fontWeight={400}
             aria-label="About"
           >
@@ -50,7 +50,7 @@ const Header = () => {
         </Link>
         <Link to="/blog">
           <Button
-            fontSize={{ base: 20, md: 37 }}
+            fontSize={{ base: "18px", sm: 20,  md: 37 }}
             fontWeight={400}
             aria-label="Blog"
           >

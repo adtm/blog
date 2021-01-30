@@ -16,11 +16,11 @@ const About = () => (
     <Box ml={{ base: 0, sm: 0, lg: 0 }}>
       <Heading
         as="h2"
-        fontSize={{ base: "40px", md: "45px", lg: "55px" }}
+        fontSize={{ base: "30px", md: "40px", lg: "55px" }}
         fontWeight={400}
         pb={{ base: 10, md: 5 }}
         letterSpacing={1}
-        lineHeight={1.6}
+        lineHeight={{ base: 1.3, sm: 1.6}}
         maxW={1000}
       >
         <Text>
