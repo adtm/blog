@@ -1,9 +1,8 @@
 import React from "react"
 import { ChakraProvider } from "@chakra-ui/react"
-import { MDXProvider } from '@mdx-js/react';
+import { MDXProvider } from "@mdx-js/react"
 
-import theme from "./src/chakra-ui/theme"
-import MDXComponents from "./src/components/MDXComponent";
+import theme from "./src/themes/global"
 
 export const onServiceWorkerUpdateReady = () => {
   const answer = window.confirm(
@@ -17,7 +16,7 @@ export const onServiceWorkerUpdateReady = () => {
 
 export const wrapRootElement = ({ element }) => (
   <ChakraProvider theme={theme}>
-    <MDXProvider components={MDXComponents}>
+    <MDXProvider>
       {element}
     </MDXProvider>
   </ChakraProvider>
