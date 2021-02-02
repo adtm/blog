@@ -7,7 +7,7 @@ interface Props {
 }
 
 const WideLayout = ({ children, styles }: Props) => (
-  <Flex px={{ base: 5, md: 10 }} flexDirection="column" {...styles}>
+  <Flex px={{ base: 5, md: 20, lg: 40 }} flexDirection="column" {...styles}>
     {children}
   </Flex>
 )

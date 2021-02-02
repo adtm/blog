@@ -22,26 +22,25 @@ const Header = () => {
     >
       <Heading
         as="h1"
-        fontSize={{ base: "18px", sm: 20,  md: 37 }}
+        fontSize={{ base: 10, sm: 12, md: 18 }}
         letterSpacing={1}
         fontWeight={400}
       >
-        Tomas Eglinskas
+        <Link to="/">
+         
+          Tomas Eglinskas
+          
+          </Link>
       </Heading>
-      {/* {colorMode == "dark" ? (
-        <SunIcon aria-label="sun-icon" onClick={toggleColorMode} />
-      ) : (
-        <MoonIcon aria-label="moon-icon" onClick={toggleColorMode} />
-      )} */}
 
       <ButtonGroup
         colorScheme="black"
         variant="link"
-        spacing={{ base: 5, md: 20 }}
+        spacing={{ base: 5, md: 10 }}
       >
         <Link to="/">
           <Button
-            fontSize={{ base: "18px", sm: 20,  md: 37 }}
+            fontSize={{ base: 10, sm: 12, md: 18 }}
             fontWeight={400}
             aria-label="About"
           >
@@ -50,11 +49,11 @@ const Header = () => {
         </Link>
         <Link to="/blog">
           <Button
-            fontSize={{ base: "18px", sm: 20,  md: 37 }}
+            fontSize={{ base: 10, sm: 12, md: 18 }}
             fontWeight={400}
-            aria-label="Blog"
+            aria-label="Journal"
           >
-            Blog
+            Journal
           </Button>
         </Link>
       </ButtonGroup>

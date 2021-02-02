@@ -9,23 +9,20 @@ interface TextLinkProps {
 
 const TextLink = ({ name, href }: TextLinkProps) => (
   <Link href={href} title={name} isExternal>
-    <Text as="h3" fontWeight={500} fontSize={{ base: 14, md: 20 }}>
+    <Text as="h3" fontWeight={40} fontSize={{ base: 12, md: 14 }}>
       {name}
     </Text>
   </Link>
 )
 
 const Footer = () => (
-  <WideLayout styles={{ position: "absolute", bottom: 30, right: 0 }}>
+  <WideLayout styles={{ position: "absolute", bottom: 10, right: 0 }}>
     <ButtonGroup
       spacing={{ base: 5, md: 10 }}
       w="100%"
       justifyContent="flex-end"
     >
-      <TextLink
-        name="Email"
-        href="mailto:tomas.eglinskas@gmail.com"
-      />
+      <TextLink name="Email" href="mailto:tomas.eglinskas@gmail.com" />
       <TextLink
         name="LinkedIn"
         href="https://www.linkedin.com/in/tomas-eglinskas"
