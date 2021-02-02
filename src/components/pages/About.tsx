@@ -11,7 +11,7 @@ const About = () => (
       position: "absolute",
       justifyContent: "center",
       transform: "translate(0%, -50%)",
-      zIndex: 10
+      zIndex: 10,
     }}
   >
     <Box ml={{ base: 0, sm: 0, lg: 0 }}>
@@ -25,17 +25,17 @@ const About = () => (
         maxW={800}
       >
         <Text>
-          👋
-          Software engineer passionate about crafting products that change
+          👋 Software engineer passionate about crafting products that change
           people lives.
         </Text>
       </Heading>
 
       <Text>
-        My primary focus is on big-scale systems, constant little improvements and people.
+        My primary focus is on big-scale systems, constant little improvements
+        and people.
       </Text>
       <Text pt={1}>
-        Currently at {" "}
+        Currently at{" "}
         <Link
           href="https://www.wix.com/velo"
           target="_blank"
@@ -46,17 +46,6 @@ const About = () => (
         </Link>
       </Text>
     </Box>
-
-    {/* <Box
-  w="100%"
-  h="200px"
-  m={100}
-  left={0}
-  bottom={0}
-  zIndex={100}
-  position="absolute"
-  bgGradient="linear(to-r,gray.300,yellow.400,pink.200)"
-/> */}
 
   </WideLayout>
 )

@@ -26,11 +26,7 @@ const Header = () => {
         letterSpacing={1}
         fontWeight={400}
       >
-        <Link to="/">
-         
-          Tomas Eglinskas
-          
-          </Link>
+        <Link to="/">Tomas Eglinskas</Link>
       </Heading>
 
       <ButtonGroup
