@@ -6,7 +6,6 @@ module.exports = {
     siteUrl: "https://tomas.life/",
   },
   plugins: [
-    'gatsby-plugin-postcss',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
