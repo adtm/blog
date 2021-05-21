@@ -17,7 +17,11 @@ const HomePage = () => (
               Wix
             </a>{' '}
             and will join{' '}
-            <a href="https://www.uber.com" target="_blank" className="underline">
+            <a
+              href="https://www.uber.com"
+              target="_blank"
+              className="underline"
+            >
               Uber
             </a>{' '}
             shortly.
@@ -35,7 +39,11 @@ const HomePage = () => (
           <p>
             During my personal journeys I enjoy pursuing projects of interest
             and volunteering for the{' '}
-            <a href="https://www.weforum.org/" target="_blank" className="underline">
+            <a
+              href="https://www.weforum.org/"
+              target="_blank"
+              className="underline"
+            >
               World Economic Forum
             </a>
             .
