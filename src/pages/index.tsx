@@ -12,12 +12,12 @@ const HomePage = () => (
         <p className="text-lg font-medium mb-14 text-center">Hi, I'm Tomas!</p>
         <div className="text-sm space-y-1 mb-8">
           <p>
-            I currently working at{' '}
-            <a href="www.wix.com" className="underline">
+            I'm currently working at{' '}
+            <a href="https://www.wix.com" target="_blank" className="underline">
               Wix
             </a>{' '}
             and will join{' '}
-            <a href="www.uber.com" className="underline">
+            <a href="https://www.uber.com" target="_blank" className="underline">
               Uber
             </a>{' '}
             shortly.
@@ -35,7 +35,7 @@ const HomePage = () => (
           <p>
             During my personal journeys I enjoy pursuing projects of interest
             and volunteering for the{' '}
-            <a href="https://www.weforum.org/" className="underline">
+            <a href="https://www.weforum.org/" target="_blank" className="underline">
               World Economic Forum
             </a>
             .
