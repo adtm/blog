@@ -1,7 +1,7 @@
-import React from "react"
-import PropTypes from "prop-types"
-import Helmet from "react-helmet"
-import { graphql, useStaticQuery } from "gatsby"
+import React from 'react'
+import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
+import { graphql, useStaticQuery } from 'gatsby'
 
 const SEO = ({ description, lang, meta, keywords, title }) => {
   const data = useStaticQuery(detailsQuery)
@@ -52,9 +52,9 @@ const SEO = ({ description, lang, meta, keywords, title }) => {
         .concat(
           keywords.length > 0
             ? {
-                name: `keywords`,
-                content: keywords.join(`, `),
-              }
+              name: `keywords`,
+              content: keywords.join(`, `),
+            }
             : []
         )
         .concat(meta)}

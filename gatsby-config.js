@@ -2,10 +2,11 @@ module.exports = {
   siteMetadata: {
     title: `Tomas Eglinskas`,
     author: `Tomas Eglinskas`,
-    description: "Software engineer passionate about creating products that change people lives.",
+    description: "Software engineer, which enjoys complex and big scalability challenges. And of course, good food with good people.",
     siteUrl: "https://tomas.life/",
   },
   plugins: [
+    'gatsby-plugin-postcss',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -59,25 +60,24 @@ module.exports = {
             `,
             output: '/rss.xml',
             title: "Tomas Eglinskas RSS Feed",
-            match: "^/blog/",
+            match: "^/thoughts/",
           },
         ],
       },
     },
     `gatsby-plugin-sitemap`,
-    "@chakra-ui/gatsby-plugin",
     {
       resolve: `gatsby-plugin-offline`,
       options: {
-        precachePages: [`/`, `/blog`, `/blog/*`],
+        precachePages: [`/`, `/thoughts`, `/thoughts/*`],
       },
     },
-    `gatsby-plugin-styled-components`,
+
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-layout`,
       options: {
-        component: require.resolve(`./src/components/container.tsx`),
+        component: require.resolve(`./src/components/Layout.tsx`),
       },
     },
     {
@@ -93,7 +93,7 @@ module.exports = {
       options: {
         name: `Tomas Eglinskas`,
         short_name: `tomas.life`,
-        description: "Software engineer passionate about creating products that change people lives.",
+        description: "Software engineer, which enjoys complex and big scalability challenges. And of course, good food with good people.",
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#663399`,

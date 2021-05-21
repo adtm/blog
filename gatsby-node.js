@@ -9,7 +9,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
         createNodeField({
             name: "slug",
             node,
-            value: `/blog${value}`,
+            value: `/${value}`,
         })
     }
 }
@@ -39,11 +39,11 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
     const posts = result.data.allMdx.edges
 
-    posts.forEach(({ node }) => {
-        createPage({
-            path: node.frontmatter.slug,
-            component: path.resolve(`./src/components/pages/blog/templates/Template.tsx`),
-            context: { id: node.id },
-        })
-    })
+    // posts.forEach(({ node }) => {
+    //     createPage({
+    //         path: node.frontmatter.slug,
+    //         component: path.resolve(`./src/components/pages/blog/templates/Template.tsx`),
+    //         context: { id: node.id },
+    //     })
+    // })
 }
