@@ -7,9 +7,10 @@
   "scripts": {
     "clean": "gatsby clean",
     "build": "gatsby build",
+    "build:style": "tailwind build src/styles/index.css -o src/styles/tailwind.css",
     "develop": "gatsby develop",
     "serve": "gatsby build && gatsby serve",
-    "start": "npm run develop",
+    "start": "npm run build:style && gatsby develop",
     "lint": "eslint src/**/*.tsx",
     "lint:fix": "npm run lint -- --fix",
     "format": "prettier --write \"src/**/*.tsx\"",
@@ -18,6 +19,7 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "@tailwindcss/postcss7-compat": "^2.1.2",
     "autoprefixer": "^9.8.6",
     "gatsby": "^2.30.1",
     "gatsby-image": "^2.9.0",
