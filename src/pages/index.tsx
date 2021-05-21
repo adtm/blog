@@ -8,7 +8,7 @@ const HomePage = () => (
       keywords={['Tomas Eglinskas', 'Software Engineer', 'Lithuania', 'Blog']}
     />
     <div>
-      <div className="py-10">
+      <div className="py-5 sm:py-10">
         <p className="text-lg font-medium mb-14 text-center">Hi, I'm Tomas!</p>
         <div className="text-sm space-y-1 mb-8">
           <p>
