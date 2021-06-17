@@ -38,7 +38,7 @@
     "gatsby-plugin-use-dark-mode": "^1.2.0",
     "gatsby-source-filesystem": "^2.9.0",
     "gatsby-transformer-sharp": "^2.10.0",
-    "postcss": "^7.0.35",
+    "postcss": "^7.0.36",
     "prism-react-renderer": "^1.1.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
