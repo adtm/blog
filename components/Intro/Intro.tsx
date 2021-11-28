@@ -3,7 +3,12 @@ const Intro = () => (
     <div className="text-sm space-y-1 mb-8">
       <p>
         I'm currently working at{' '}
-        <a href="https://www.uber.com" target="_blank" className="underline">
+        <a
+          href="https://www.uber.com"
+          rel="noopener"
+          target="_blank"
+          className="underline"
+        >
           Uber
         </a>
         , in the Storage Team, responsible for maintaining, operating and
@@ -24,6 +29,7 @@ const Intro = () => (
         volunteering for the{' '}
         <a
           href="https://www.weforum.org/"
+          rel="noopener"
           target="_blank"
           className="underline"
         >
