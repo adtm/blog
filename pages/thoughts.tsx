@@ -14,20 +14,23 @@ interface ThoughtsProps {
 }
 
 const Thoughts = ({ posts }: ThoughtsProps) => (
-  <div>
+  <>
     <Metadata title="Thoughts" />
     <div className="py-5 sm:py-10 mb-10 sm:mb-20">
       <p className="text-lg font-medium mb-20 text-center">Thoughts</p>
       <div className="text-sm">
         {posts.map((post) => (
-          <div key={post.title}>
-            <h2 className="text-center italic mb-10">{post.title}</h2>
+          <div key={post.title} className="mb-20">
+            <div className="text-center mb-10">
+              <h2 className="italic">{post.title}</h2>
+              <span className="text-xs italic">{post.date}</span>
+            </div>
             <MDXRemote {...post.content} components={components} />
           </div>
         ))}
       </div>
     </div>
-  </div>
+  </>
 )
 
 export async function getStaticProps() {
