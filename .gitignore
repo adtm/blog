@@ -54,9 +54,8 @@ typings/
 # dotenv environment variables file
 .env
 
-# gatsby files
-.cache/
-public
+# nextJs build folder
+.next
 
 # Mac files
 .DS_Store
