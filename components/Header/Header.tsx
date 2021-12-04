@@ -47,7 +47,10 @@ const Header = () => {
             )
           } else {
             return (
-              <div key={route.name} className="inline line-through cursor-not-allowed">
+              <div
+                key={route.name}
+                className="inline line-through cursor-not-allowed"
+              >
                 {route.name}
               </div>
             )
