@@ -31,6 +31,7 @@ const RecentWorks = ({ works }: RecentWorksProps) => (
         , <span className="text-xs italic">{recent.year}</span>
       </p>
     ))}
+    <p>...</p>
   </>
 )
 
