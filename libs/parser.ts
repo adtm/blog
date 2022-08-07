@@ -8,15 +8,28 @@ export interface Post {
   content?: string;
 }
 
-const postsDirectory = join(process.cwd(), 'posts')
+export const BLOG_POST_DIRECTORY = join(process.cwd(), 'posts', 'blog')
+export const TECH_POST_DIRECTORY = join(process.cwd(), 'posts', 'tech')
 
-export function getPostSlugs() {
-  return fs.readdirSync(postsDirectory)
+export function getBlogPostSlugs() {
+  return fs.readdirSync(BLOG_POST_DIRECTORY)
 }
 
-export function getPostBySlug(slug, fields = []): Post {
+export function getTechPostSlugs() {
+  return fs.readdirSync(TECH_POST_DIRECTORY)
+}
+
+export function getTechPostBySlog(slug, fields = []): Post {
+  return getPostBySlug(TECH_POST_DIRECTORY, slug, fields)
+}
+
+export function getBlogPostBySlog(slug, fields = []): Post {
+  return getPostBySlug(BLOG_POST_DIRECTORY, slug, fields)
+}
+
+function getPostBySlug(directory: string, slug, fields = []): Post {
   const realSlug = slug.replace(/\.md$/, '')
-  const fullPath = join(postsDirectory, `${realSlug}.md`)
+  const fullPath = join(directory, `${realSlug}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const { data, content } = matter(fileContents)
 
@@ -38,9 +51,16 @@ export function getPostBySlug(slug, fields = []): Post {
   return items
 }
 
-export function getAllPosts(fields = []) {
-  const slugs = getPostSlugs()
+export function getAllBlogPosts(fields = []) {
+  const slugs = getBlogPostSlugs()
   return slugs
-    .map((slug) => getPostBySlug(slug, fields))
+    .map((slug) => getPostBySlug(BLOG_POST_DIRECTORY, slug, fields))
+    .sort((post1, post2) => (new Date(post1.date) > new Date(post2.date) ? -1 : 1))
+}
+
+export function getAllTechPosts(fields = []) {
+  const slugs = getTechPostSlugs()
+  return slugs
+    .map((slug) => getPostBySlug(TECH_POST_DIRECTORY, slug, fields))
     .sort((post1, post2) => (new Date(post1.date) > new Date(post2.date) ? -1 : 1))
 }

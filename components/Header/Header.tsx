@@ -22,7 +22,7 @@ const routes: Array<Route> = [
   {
     href: '/tech',
     name: 'Tech',
-    active: false,
+    active: true,
   },
 ]
 
