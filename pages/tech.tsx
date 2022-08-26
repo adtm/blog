@@ -34,10 +34,10 @@ const Thoughts = ({ posts }: ThoughtsProps) => (
 )
 
 export async function getStaticProps() {
-  const posts = getAllTechPosts(['title', 'date', 'content'])
+  const posts = getAllTechPosts(['title', 'date', 'short'])
   const deserializedPosts = await Promise.all(
     posts.map(async (post) => {
-      const markdown = await serialize(post.content)
+      const markdown = await serialize(post.short)
       return {
         ...post,
         content: markdown,

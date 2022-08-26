@@ -6,6 +6,7 @@ export interface Post {
   date?: string;
   title?: string;
   content?: string;
+  short?: string;
 }
 
 export const BLOG_POST_DIRECTORY = join(process.cwd(), 'posts', 'blog')
@@ -54,13 +55,13 @@ function getPostBySlug(directory: string, slug, fields = []): Post {
 export function getAllBlogPosts(fields = []) {
   const slugs = getBlogPostSlugs()
   return slugs
-    .map((slug) => getPostBySlug(BLOG_POST_DIRECTORY, slug, fields))
+    .map((slug) => getBlogPostBySlog(slug, fields))
     .sort((post1, post2) => (new Date(post1.date) > new Date(post2.date) ? -1 : 1))
 }
 
 export function getAllTechPosts(fields = []) {
   const slugs = getTechPostSlugs()
   return slugs
-    .map((slug) => getPostBySlug(TECH_POST_DIRECTORY, slug, fields))
+    .map((slug) => getTechPostBySlog(slug, fields))
     .sort((post1, post2) => (new Date(post1.date) > new Date(post2.date) ? -1 : 1))
 }
