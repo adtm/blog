@@ -11,7 +11,7 @@ const Intro = () => (
         >
           Uber
         </a>
-        , in the Storage Team,, responsible for maintaining, operating and
+        , in the Storage Team, responsible for maintaining, operating and
         extending current database solutions.
       </p>
     </div>
