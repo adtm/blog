@@ -25,7 +25,7 @@ const Intro = () => (
     </div>
     <div className="text-sm space-y-1 mb-10 sm:mb-20">
       <p>
-        During my personal journeys I enjoy pursuing projects of interest and
+        During my personal journeys I'm pursuing startups cause enterprises are boring and
         volunteering for the{' '}
         <a
           href="https://www.weforum.org/"
